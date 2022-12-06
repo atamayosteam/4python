@@ -1,10 +1,10 @@
-todo = []
+my_file = open('todo.txt', 'a')
 
-x = input('what to add to list: ')
-todo.append(x)
+while True:
+    # print('your todos are:')
+    # print(todos)
 
-print(todo)
 
-x = input('is there something else you want to add: ')
-todo.append(x)
-print (todo)
+    x = input(" What todo would you like to add? ")
+    # todos.append(x)
+    my_file.write(x)
